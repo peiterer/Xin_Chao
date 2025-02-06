@@ -3,27 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Xin Chao</title>
+    <link rel="icon" href="images/WBtoplogo.svg">
+    <link href="tailwind.css" rel="stylesheet">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body class="bg-black">
     <header>
-        <nav id="navbar" class="z-40 fixed bg-black h-[70px] w-full flex justify-between p-[5px] overflow-auto transition-transform duration-300">
-            <div class="m-[5px]">
-                <a href="/src/index.html ">
-                    <img
-                        src="images/XinChaoLogoSVGWhite.svg"
-                        alt="XinChaoLogoSVG"
-                        class="h-[50px] ml-[5px]"
-                    />
-                </a>
-            </div>
+        <nav id="navbar"
+          class="z-40 fixed bg-[#051118] h-[70px] w-full flex justify-between p-[5px] overflow-auto transition-transform duration-300">
+          <div class="m-[5px]">
+            <a href="/src/index.html ">
+              <img src="images/XinChaoLogoSVGWhite.svg" alt="XinChaoLogoSVG" class="h-[50px] ml-[5px]" />
+            </a>
+          </div>
           <!-- Desktop links for the navigationbar -->
           <div class="nav-links hidden sm:flex items-center mr-[20px] left-0">
             <ul class="flex flex-row text-white m-[5px] items-center gap-[3vw] font-bold">
@@ -37,77 +34,173 @@
             <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer text-white"></ion-icon>
           </div>
         </nav>
-    </header>
+      </header>
       <!-- The slide menu -->
-    <aside id="slideMenu" class="z-30 fixed sm:hidden top-0 right-0 h-full 2-64 bg-black opacity-90 transform translate-x-full transition-transform duration-300">
+      <aside id="slideMenu"
+        class="z-30 fixed sm:hidden top-0 right-0 h-full 2-64 bg-[#051118] opacity-90 transform translate-x-full transition-transform duration-300">
         <ul class="flex flex-col text-white m-[15px] items-start gap-[2vh] font-bold p-4 mt-[80px]">
-            <li class="hover:text-gray-400 w-full h-[40px]"><a href="/src/index.html" class="text-xl">Hjem</a></li>
-            <li class="hover:text-gray-400 w-full h-[40px]"><a href="/src/meny.html" class="text-xl">Meny</a></li>
-            <li class="hover:text-gray-400 w-full h-[40px]"><a href="/src/contact.html" class="text-xl">Kontakt oss</a></li>
+          <li class="hover:text-gray-400 w-full h-[40px]"><a href="/src/index.html" class="text-xl">Hjem</a></li>
+          <li class="hover:text-gray-400 w-full h-[40px]"><a href="/src/meny.html" class="text-xl">Meny</a></li>
+          <li class="hover:text-gray-400 w-full h-[40px]"><a href="/src/contact.html" class="text-xl">Kontakt oss</a></li>
         </ul>
-    </aside>
-
+      </aside>
         
-    <div class="bg-[url(/src/images/VietnamFood2backgroundXin_Chao.png)] h-100 ww-full bg-cover bg-center opacity-50">
+    <div class="bg-[url(/src/images/VietnamFood2backgroundXin_Chao.png)] h-150 ww-full bg-cover bg-center opacity-50">
 
     </div>
     <center>
-        <h1 class="text-4xl sm:text-5xl center mt-60 text-white absolute inset-0 font-bold h-10">Meny
+        <h1 class="text-4xl  sm:text-5xl center mt-60 text-white absolute inset-0 font-bold h-10">Meny
         </h1>
     </center>
-    <div class="ww-full h-15 flex justify-center">
-        <h1 class="py-4 justify-center flex bg-gradient-to-r items-center from-red-400 via-yellow-500 to-green-400 bg-clip-text text-5xl font-extrabold text-transparent text-center select-auto self-center">Spesialer</h1>
-    </div>
-    <div class="ww-5/6 h-5/6 flex flex-row justify-around items-center"> 
-
-        <div class="w-2/8 sm:h-75 h-60 bg-gray-500 rounded-xl text-center transition-transform duration-30 hover:scale-120">
-            <div class="ww-full h-4/6 rounded-xl rounded-b-none bg-[url(/src/images/Bun_Bo_Xao_Cha_Gio.png)] bg-cover bg-center bg-white">
-            </div>
-            <p class="text-2xl self-center">Bun Bo Xao Cha Gio</p>
-            <p class="text-xs self-center">Sitrongress og chili marinert indrefilet av storfe med vermicelli nudler, bønnespirer, agurk, løk, syltet gulrot og reddik, peanøtter, salat og urter. Serveres med huset sursøt chili fiskesaus og kylling våruller.</p>
-        </div>
-        
-        <div class="w-2/8 sm:h-75 h-60 bg-gray-500 rounded-xl text-center transition-transform duration-30 hover:scale-120">
-            <div class="bg-black ww-full h-4/6 rounded-xl rounded-b-none bg-[url(/src/images/Bun_bo_hue.png)] bg-cover bg-center bg-white">
-            </div>
-            <p class="text-2xl self-center">Bun Bo hue</p>
-            <p class="text-xs self-center">Umami langtids kokt krydder kraft av okse, kylling og svin. Serveres med vermicelli nudler, toppet med langtidsbraisert storfekjøtt, svinekjøtt, vietnamesiske kyllingpølser og urter.</p>
-        </div>
-        
-        <div class="w-2/8 sm:h-75 h-60 bg-gray-500 rounded-xl text-center transition-transform duration-30 hover:scale-120">
-            <div class="bg-black ww-full h-4/6 rounded-xl rounded-b-none bg-[url(/src/images/Fried_spring_roll_chicken.png)] bg-cover bg-center bg-white">
-            </div>
-            <p class="text-2xl self-center">Fried Spring Roll Chicken</p>
-            <p class="text-xs self-center">2 stk. sommerruller fylt med scampi, egg, ris, nudler, salat, agurk og urter. Serveres med hjemmelaget hoisinsaus.</p>
-        </div>
-    </div>
-    <!-- NESTE KATEGORI -->
+    <div class="loadAnimation">
 
     <div class="ww-full h-15 flex justify-center">
-        <h1 class="py-4 justify-center flex bg-gradient-to-r items-center from-red-400 via-yellow-500 to-green-400 bg-clip-text text-5xl font-extrabold text-transparent text-center select-auto self-center">Forretter</h1>
+        <h1 class=" mb-5 py-4 justify-center flex bg-gradient-to-r items-center from-white via-white to-white bg-clip-text sm:text-5xl text-3xl font-extrabold text-transparent text-center select-auto self-center">Spesialer</h1>
     </div>
-    <div class="ww-5/6 h-5/6 flex flex-row justify-around items-center"> 
-        
-        <div class="w-2/8 sm:h-75 h-60 bg-gray-500 rounded-xl text-center">
-            <div class="ww-full h-4/6 rounded-xl rounded-b-none bg-[url(/src/images/Bun_Bo_Xao_Cha_Gio.png)] bg-cover bg-center bg-white">
+
+    <div class=" mb-10 ww-5/6 h-5/6 flex justify-around items-center grid grid-cols-2 grid-rows-2 sm:grid-cols-3 sm:grid-rows-1 gap-x-7 gap-y-7"> 
+        <!-- Første rett -->
+        <div class="w-[6/6vw] sm:h-75 h-60 bg-[#262626] rounded-xl text-center transition-transform duration-30 hover:scale-120 group">
+            <div class="ww-full h-4/6 rounded-xl rounded-b-none bg-[url(/src/images/Bun_Bo_Xao_Cha_Gio.png)] bg-cover bg-center">
             </div>
-            <p class="text-2xl self-center">Bun Bo Xao Cha Gio </p>
+            <p class="sm:text-2xl self-center text-md font-bold text-[#fbfff4]">Bun Bo Xao Cha Gio</p>
+            <p class="text-xs self-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-[#fbfff4]">Sitrongress og chili marinert indrefilet av storfe med vermicelli nudler, bønnespirer, agurk, løk, syltet gulrot og reddik, peanøtter, salat og urter. Serveres med huset sursøt chili fiskesaus og kylling våruller.</p>
         </div>
-        
-        <div class="w-2/8 sm:h-75 h-60 bg-gray-500 rounded-xl text-center">
-            <div class="bg-black ww-full h-4/6 rounded-xl rounded-b-none bg-[url(/src/images/Bun_bo_hue.png)] bg-cover bg-center bg-white">
+        <!-- Andre rett -->
+        <div class="w-[6/6vw] sm:h-75 h-60 bg-[#262626] rounded-xl text-center transition-transform duration-30 hover:scale-120 group">
+            <div class="ww-full h-4/6 rounded-xl rounded-b-none bg-[url(/src/images/Bun_bo_hue.png)] bg-cover bg-center">
             </div>
-            <p class="text-2xl self-center">Bun Bo hue</p>
+            <p class="sm:text-2xl self-center text-md font-bold text-[#fbfff4]">Bun Bo hue</p>
+            <p class="text-xs self-center transition-opacity duration-300 opacity-0 group-hover:opacity-100 text-[#fbfff4]">Umami langtids kokt krydder kraft av okse, kylling og svin. Serveres med vermicelli nudler, toppet med langtidsbraisert storfekjøtt, svinekjøtt, vietnamesiske kyllingpølser og urter.</p>
         </div>
-        
-        <div class="w-2/8 sm:h-75 h-60 bg-gray-500 rounded-xl text-center">
-            <div class="bg-black ww-full h-4/6 rounded-xl rounded-b-none bg-[url(/src/images/Sommerruller_med_Scampi.png)] bg-cover bg-center bg-white">
+        <!-- Tredje rett -->
+        <div class="w-[6/6vw] sm:h-75 h-60 bg-[#262626] rounded-xl text-center transition-transform duration-30 hover:scale-120 group">
+            <div class=" ww-full h-4/6 rounded-xl rounded-b-none bg-[url(/src/images/Fried_spring_roll_chicken.png)] bg-cover bg-center">
             </div>
-            <p class="text-2xl self-center">Sommerruller med scampi</p>
-            <p class="text-xs self-center">transition-transform duration-30 hover:scale-120</p>
+            <p class="sm:text-2xl self-center text-md font-bold text-[#fbfff4]">Fried Spring Roll Chicken</p>
+            <p class="text-xs self-center transition-opacity duration-300 opacity-0 group-hover:opacity-100 text-[#fbfff4]">2 stk. friterte vårruller med kylling, glassnudler, sort sopp, gulrot og urter. Serveres med sweet chilisaus.</p>
+        </div>
+    </div>
+    <!-- FORRETT -->
+    
+    <div class="ww-full h-15 flex justify-center">
+        <h1 class="mb-5 py-4 justify-center flex bg-gradient-to-r items-center from-white via-white to-white bg-clip-text sm:text-5xl text-3xl font-extrabold text-transparent text-center select-auto self-center">Forretter</h1>
+    </div>
+    <div class="ww-5/6 h-5/6 flex flex-row justify-around items-center grid grid-cols-2 grid-rows-2 sm:grid-cols-3 sm:grid-rows-1 gap-x-7 gap-y-7"> 
+        <!-- Første rett -->
+        <div class="w-[6/6vw] sm:h-75 h-60 bg-[#262626] rounded-xl text-center transition-transform duration-30 hover:scale-120 group">
+            <div class="ww-full h-4/6 rounded-xl rounded-b-none bg-[url(/src/images/Fried_spring_roll_chicken.png)] bg-cover bg-center">
+            </div>
+            <p class="sm:text-2xl self-center text-md font-bold text-[#fbfff4]">Fried Spring Roll Vegetar</p>
+            <p class="text-xs self-center transition-opacity duration-300 opacity-0 group-hover:opacity-100 text-[#fbfff4]">2 stk. friterte vårruller med tofu, glassnudler, sort sopp, gulrot og urter. Serveres med sweet chilisaus.</p>
+        </div>
+        <!-- Andre rett -->
+        <div class="w-[6/6vw] sm:h-75 h-60 bg-[#262626] rounded-xl text-center transition-transform duration-30 hover:scale-120 group">
+            <div class=" ww-full h-4/6 rounded-xl rounded-b-none bg-[url(/src/images/Tempura_scampi.png)] bg-cover bg-center">
+            </div>
+            <p class="sm:text-2xl self-center text-md font-bold text-[#fbfff4]">Tempura Scampi</p>
+            <p class="text-xs self-center transition-opacity duration-300 opacity-0 group-hover:opacity-100 text-[#fbfff4]">3.stk innbakt scampi med sweet chilisaus.</p>
+        </div>
+        <!-- Tredje rett -->
+        <div class="w-[6/6vw] sm:h-75 h-60 bg-[#262626] rounded-xl text-center transition-transform duration-30 hover:scale-120 group">
+            <div class=" ww-full h-4/6 rounded-xl rounded-b-none bg-[url(/src/images/Sommerruller_med_Scampi.png)] bg-cover bg-center">
+            </div>
+            <p class="sm:text-2xl self-center text-md font-bold text-[#fbfff4]">Sommerruller med scampi</p>
+            <p class="text-xs self-center transition-opacity duration-300 opacity-0 group-hover:opacity-100 text-[#fbfff4]">2 stk. sommerruller fylt med scampi, egg, ris, nudler, salat, agurk og urter. Serveres med hjemmelaget hoisinsaus.</p>
         </div>
     </div>
 
-    <script src="main.js"></script>
+    <!-- HOVEDRETT -->
+
+    <div class="ww-full h-15 flex justify-center">
+        <h1 class="py-4 justify-center flex bg-gradient-to-r items-center from-white via-white to-white bg-clip-text sm:text-5xl text-3xl font-extrabold text-transparent text-center select-auto self-center">Hovedretter</h1>
+    </div>
+    <div class="ww-5/6 h-5/6 flex flex-row justify-around items-center grid grid-cols-2 grid-rows-2 sm:grid-cols-3 sm:grid-rows-1 gap-x-7 gap-y-7"> 
+        <!-- Første rett -->
+        <div class="w-[6/6vw] sm:h-75 h-60 bg-[#262626] rounded-xl text-center transition-transform duration-30 hover:scale-120 group">
+            <div class="ww-full h-4/6 rounded-xl rounded-b-none bg-[url(/src/images/Bun_cha_ha_noi.png)] bg-cover bg-center bg-auto">
+            </div>
+            <p class="sm:text-2xl self-center text-md font-bold text-[#fbfff4]">Bun Cha Ha Noi</p>
+            <p class="text-xs self-center transition-opacity duration-300 opacity-0 group-hover:opacity-100 text-[#fbfff4]">Nord-vietnamesisk rett med grillet svinekjøtt, kjøttboller, vermicelli nudler, syltet gulrot og reddik, peanøtter, salat og urter. Serveres med huset sursøt chili fiskesaus.</p>
+        </div>
+        <!-- Andre rett -->
+        <div class="w-[6/6vw] sm:h-75 h-60 bg-[#262626] rounded-xl text-center transition-transform duration-30 hover:scale-120 group">
+            <div class="ww-full h-4/6 rounded-xl rounded-b-none bg-[url(/src/images/Bun_Cha_tom_cha_gio.png)] bg-cover bg-center bg-auto">
+            </div>
+            <p class="sm:text-2xl self-center text-md font-bold text-[#fbfff4]">Bun Cha Tom Cha Gio</p>
+            <p class="text-xs self-center transition-opacity duration-300 opacity-0 group-hover:opacity-100 text-[#fbfff4]">Vietnamesisk scampikake med vermicelli nudler, bønnespirer, agurk, løk, syltet gulrot og reddik, peanøtter, salat og urter. Serveres med huset sursøt chili fiskesaus og kylling våruller.</p>
+        </div>
+        <!-- Tredje rett -->
+        <div class="w-[6/6vw] sm:h-75 h-60 bg-[#262626] rounded-xl text-center transition-transform duration-30 hover:scale-120 group">
+            <div class="ww-full h-4/6 rounded-xl rounded-b-none bg-[url(/src/images/Banh_Xeo.png)] bg-cover bg-center bg-auto">
+            </div>
+            <p class="sm:text-2xl self-center font-bold text-[#fbfff4]">Banh Xeo</p>
+            <p class="text-xs self-center transition-opacity duration-300 opacity-0 group-hover:opacity-100 text-[#fbfff4]">Vietnamesisk sprø rispannekaker fylt med scampi, svinekjøtt og bønnespirer. Serveres med salat, friske urter og sursøt chili fiskesaus dip.</p>
+        </div>
+    </div>
+
+        <!-- BAGUETTER -->
+         
+
+    <div class="ww-full h-15 flex justify-center">
+        <h1 class="py-4 justify-center flex bg-gradient-to-r items-center from-white via-white to-white bg-clip-text sm:text-5xl text-3xl font-extrabold text-transparent text-center select-auto self-center">Baguetter</h1>
+    </div>
+    <div class="ww-5/6 h-5/6 flex flex-row justify-around items-center grid grid-cols-2 grid-rows-2 sm:grid-cols-3 sm:grid-rows-1 gap-x-7 gap-y-7"> 
+        <!-- Første rett -->
+        <div class="w-[6/6vw] sm:h-75 h-60 bg-[#262626] rounded-xl text-center transition-transform duration-30 hover:scale-120 group">
+            <div class="ww-full h-4/6 rounded-xl rounded-b-none bg-[url(/src/images/Bánh_Mi_Kylling.png)] bg-cover bg-center">
+            </div>
+            <p class="sm:text-2xl self-center text-md font-bold text-[#fbfff4]">Bánh Mi Kylling</p>
+            <p class="text-xs self-center transition-opacity duration-300 opacity-0 group-hover:opacity-100 text-[#fbfff4]">Vietnamesisk baguette med kylling, omelett, paté, smør, majones, syltet gulrot og reddik, koriander og agurk. Serveres med huset søt chili soyasaus.</p>
+        </div>
+        <!-- Andre rett -->
+        <div class="w-[6/6vw] sm:h-75 h-60 bg-[#262626] rounded-xl text-center transition-transform duration-30 hover:scale-120 group">
+            <div class=" ww-full h-4/6 rounded-xl rounded-b-none bg-[url(/src/images/Bánh_Mi_Omelett.png)] bg-cover bg-center">
+            </div>
+            <p class="sm:text-2xl self-center text-md font-bold text-[#fbfff4]">Bánh Mì Omelett</p>
+            <p class="text-xs self-center transition-opacity duration-300 opacity-0 group-hover:opacity-100 text-[#fbfff4]">Vietnamesisk baguette med grillet svinekjøtt majones, syltet gulrot og reddik, agurk og koriander. Serveres med huset søt chili soyasaus.</p>
+        </div>
+         <!-- Tredje rett -->
+        <div class="w-[6/6vw] sm:h-75 h-60 bg-[#262626] rounded-xl text-center transition-transform duration-30 hover:scale-120 group">
+            <div class=" ww-full h-4/6 rounded-xl rounded-b-none bg-[url(/src/images/Bánh_Mi_Strofe.png)] bg-cover bg-center ">
+            </div>
+            <p class="sm:text-2xl self-center font-bold text-[#fbfff4]">Bánh Mì Storfe</p>
+            <p class="text-xs self-center transition-opacity duration-300 opacity-0 group-hover:opacity-100 text-[#fbfff4]">Vietnamesisk baguette med langtidsbraisert oksekjøtt, syltet gulrot og reddik, smør, majones, agurk og koriander.  </p>
+        </div>
+    </div>
+
+    <!-- DRIKKE -->
+
+    <div class="ww-full h-15 flex justify-center">
+        <h1 class="py-4 justify-center flex bg-gradient-to-r items-center from-white via-white to-white bg-clip-text sm:text-5xl text-3xl font-extrabold text-transparent text-center select-auto self-center">Drikke</h1>
+    </div>
+    <div class="ww-5/6 h-5/6 flex flex-row justify-around items-center grid grid-cols-2 grid-rows-2 sm:grid-cols-3 sm:grid-rows-1 gap-x-7 gap-y-7"> 
+        <!-- Første rett -->
+        <div class="w-[6/6vw] sm:h-75 h-60 bg-[#262626] rounded-xl text-center transition-transform duration-30 hover:scale-120 group">
+            <div class="ww-full h-5/6 rounded-xl rounded-b-none bg-[url(/src/images/Cola_Xin.png)] bg-cover bg-center">
+            </div>
+            <p class="sm:text-2xl self-center text-md font-bold text-[#fbfff4]">Cola</p>
+            <p class="text-xs self-center transition-opacity duration-300 opacity-0 group-hover:opacity-100 text-[#fbfff4]">kun for refferance</p>
+        </div>
+        <!-- Andre rett -->
+        <div class="w-[6/6vw] sm:h-75 h-60 bg-[#262626] rounded-xl text-center transition-transform duration-30 hover:scale-120 group">
+            <div class=" ww-full h-5/6 rounded-xl rounded-b-none bg-[url(/src/images/Solo_Xin.png)] bg-cover bg-center">
+            </div>
+            <p class="sm:text-2xl self-center text-md font-bold text-[#fbfff4]">Solo</p>
+            <p class="text-xs self-center transition-opacity duration-300 opacity-0 group-hover:opacity-100 text-[#fbfff4]">kun for refferance</p>
+        </div>
+        <!-- Tredje rett -->
+        <div class="w-[6/6vw] sm:h-75 h-60 bg-[#262626] rounded-xl text-center transition-transform duration-30 hover:scale-120 group">
+            <div class=" ww-full h-4/6 rounded-xl rounded-b-none bg-[url(/src/images/7up_Xin.png)] bg-cover bg-center bg-auto bg-contain">
+            </div>
+            <p class="sm:text-2xl self-center font-bold text-[#fbfff4]">7up</p>
+            <p class="text-xs self-center transition-opacity duration-300 opacity-0 group-hover:opacity-100 text-[#fbfff4]">kun for refferance</p>
+        </div>
+    </div>
+
+    <!-- tomt rom nederst på nettsiden -->
+    <div class="h-[5vh]"></div> 
+</div>
+<script src="main.js"></script>
 </body>
 </html>
