@@ -7,8 +7,6 @@ Dette er nettsiden for den vietnamesiske restauranten **Xin Chào**, laget som e
 - [Installasjon](#installasjon)
 - [Bruk](#bruk)
 - [Teknologi](#teknologi)
-- [Lisens](#lisens)
-- [Prosesslogg](#prosesslogg)
 
 ## Beskrivelse
 
@@ -29,3 +27,28 @@ For å sette opp nettsiden lokalt, følg disse stegene:
 1. Klon prosjektet:
    ```bash
    git clone https://github.com/botsqerebot/Xin_Chao.git
+
+2. Naviger til prosjektmappen:
+   ```bash
+   cd cd Xin_Chao/src
+
+3. Installer avhengigheter:
+   ```bash
+   npm install
+
+4. Kjør utviklingsserveren:
+   ```bash
+   npm start
+
+## Bruk
+
+Besøk nettsiden for å se menyen, finne kontaktinformasjon og se kartet med restaurantens plassering. Nettsiden er laget for å være enkel å navigere på, uansett om du besøker den fra en mobiltelefon eller en PC.
+
+## Teknologi
+
+Dette prosjektet er bygget med følgende teknologier:
+
+- **Frontend:** HTML, CSS (Tailwind CSS), JavaScript
+- **Google Maps:** For kartintegrasjon
+- **Hosting:** Vercel
+- **Versjonskontroll:** GitHub
