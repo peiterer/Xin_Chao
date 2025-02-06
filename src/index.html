@@ -51,21 +51,18 @@
   </header>
   <!-- The slide menu -->
   <aside id="slideMenu"
-    class="z-30 fixed sm:hidden top-0 right-0 h-full 2-64 bg-[#051118] opacity-90 transform translate-x-full transition-transform duration-300">
+    class="z-30 fixed sm:hidden top-0 right-0 h-full 2-64 bg-[#051118] opacity-99 transform translate-x-full transition-transform duration-300">
     <ul class="flex flex-col text-white m-[15px] items-start gap-[2vh] font-bold p-4 mt-[80px]">
-      <li class="hover:text-gray-400 w-full h-[40px]"><a href="/src/index.html" class="text-xl">Hjem</a></li>
-      <li class="hover:text-gray-400 w-full h-[40px]"><a href="/src/meny.html" class="text-xl">Meny</a></li>
-      <li class="hover:text-gray-400 w-full h-[40px]"><a href="/src/contact.html" class="text-xl">Kontakt oss</a></li>
+      <li class="hover:text-gray-400 w-full h-[40px] bg-[#262626] rounded-2xl text-center flex items-center pl-1 hover:scale-105 duration-300"><a href="/src/index.html" class="text-xl m-3">Hjem</a></li>
+      <li class="hover:text-gray-400 w-full h-[40px] bg-[#262626] rounded-2xl text-center flex items-center pl-1 hover:scale-105 duration-300"><a href="/src/meny.html" class="text-xl m-3">Meny</a></li>
+      <li class="hover:text-gray-400 w-full h-[40px] bg-[#262626] rounded-2xl text-center flex items-center pl-1 hover:scale-105 duration-300"><a href="/src/contact.html" class="text-xl m-3">Kontakt oss</a></li>
     </ul>
   </aside>
 
   <!-- Hero section -->
   <section class="relative">
     <img src="images/homepageTitleImage.webp" alt="Title Image"
-      class="z-10 w-screen max-h-[600px] object-cover opacity-40 min-h-[400px]">
-    <!-- <h1 class="absolute inset-0 flex items-center justify-center text-5xl text-white font-bold p-[20px]">
-          Det du vil skrive inn
-      </h1> -->
+      class="z-10 w-screen max-h-[600px] object-cover opacity-40 min-h-[400px] bg-gray-400">
     <div class="absolute inset-0 flex items-center justify-center text-5xl text-white font-bold p-[20px]">
       <img src="images/XinChaoLogoSVGWhite.svg" alt="XinChaoLogoSVG" class=" h-[18vw] z-20 mt-[6vh]" />
     </div>
@@ -123,6 +120,40 @@
         <p class="flex items-center gap-1 text-2xl text-[#FBFFF4] hover:text-gray-400 font-sans">Se mer</p>
       </div>
     </a>
+    <div>
+      <p class="font-bold mb-5 text-[#FBFFF4] text-center mt-[8vh]">Åpningstider</p>
+      <div class="bg-[#262626] p-5 w-100 rounded-2xl w-[90vw] md:w-[50vw] text-[#FBFFF4]">
+          <div class="flex justify-between border-b-1 p-2 pt-0 border-black">
+              <p>Mandag</p>
+              <p>Stengt</p>
+          </div>
+          <div class="flex justify-between border-b-1 p-2 border-black">
+              <p>Tirsdag</p>
+              <p>14:00-21:00</p>
+          </div>
+          <div class="flex justify-between border-b-1 p-2 border-black">
+              <p>Onsdag</p>
+              <p>14:00-21:00</p>
+          </div>
+          <div class="flex justify-between border-b-1 p-2 border-black">
+              <p>Torsdag</p>
+              <p>14:00-21:00</p>
+          </div>
+          <div class="flex justify-between border-b-1 p-2 border-black">
+              <p>Fredag</p>
+              <p>14:00-21:00</p>
+          </div>
+          <div class="flex justify-between border-b-1 p-2 border-black">
+              <p>Lørdag</p>
+              <p>14:00-21:00</p>
+          </div>
+          <div class="flex justify-between p-2 pb-0">
+              <p>Søndag</p>
+              <p>14:00-21:00</p>
+          </div>
+      </div>
+  </div>
+
   </div>
 
   <div class="h-[25vh]"></div>

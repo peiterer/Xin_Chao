@@ -31,7 +31,15 @@ window.addEventListener('scroll', function () {
     lastScrollTop = scrollTop;
 });
 
-function onToggleMenu(e){
-    e.name = e.name === 'menu' ? 'close' : 'menu'
-    slideMenu.classList.toggle('translate-x-full')
+//function onToggleMenu(e){
+//    e.name = e.name === 'menu' ? 'close' : 'menu'
+//    slideMenu.classList.toggle('translate-x-full')
+//}
+
+function onToggleMenu(e) {
+    const isOpen = slideMenu.classList.toggle('translate-x-full');
+ 
+    e.name = isOpen ? 'menu' : 'close';
+ 
+    document.body.classList.toggle('overflow-hidden', !isOpen);
 }
