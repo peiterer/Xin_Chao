@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-[#051118]">
+<body class="bg-[#05081c]">
   <header>
     <nav id="navbar"
       class="z-40 fixed bg-[#051118] h-[70px] w-full flex justify-between p-[5px] overflow-auto transition-transform duration-300">
@@ -53,111 +53,138 @@
   <aside id="slideMenu"
     class="z-30 fixed sm:hidden top-0 right-0 h-full 2-64 bg-[#051118] opacity-99 transform translate-x-full transition-transform duration-300">
     <ul class="flex flex-col text-white m-[15px] items-start gap-[2vh] font-bold p-4 mt-[80px]">
-      <li class="hover:text-gray-400 w-[150px] h-[50px] bg-[#262626] rounded-xl text-center flex items-center pl-1 hover:scale-105 duration-300"><a href="/src/index.html" class="text-xl ml-2">Hjem</a></li>
-      <li class="hover:text-gray-400 w-[150px] h-[50px] bg-[#262626] rounded-xl text-center flex items-center pl-1 hover:scale-105 duration-300"><a href="/src/meny.html" class="text-xl ml-2">Meny</a></li>
-      <li class="hover:text-gray-400 w-[150px] h-[50px] bg-[#262626] rounded-xl text-center flex items-center pl-1 hover:scale-105 duration-300"><a href="/src/contact.html" class="text-xl ml-2">Kontakt oss</a></li>
+      <li
+        class="hover:text-gray-400 w-[150px] h-[50px] bg-[#262626] rounded-xl text-center flex items-center pl-1 hover:scale-105 duration-300">
+        <a href="/src/index.html" class="text-xl ml-2">Hjem</a>
+      </li>
+      <li
+        class="hover:text-gray-400 w-[150px] h-[50px] bg-[#262626] rounded-xl text-center flex items-center pl-1 hover:scale-105 duration-300">
+        <a href="/src/meny.html" class="text-xl ml-2">Meny</a>
+      </li>
+      <li
+        class="hover:text-gray-400 w-[150px] h-[50px] bg-[#262626] rounded-xl text-center flex items-center pl-1 hover:scale-105 duration-300">
+        <a href="/src/contact.html" class="text-xl ml-2">Kontakt oss</a>
+      </li>
     </ul>
   </aside>
 
   <!-- Hero section -->
-  <section class="relative">
+  <section class="relative"> <!--The main picture og the homepage-->
     <img src="images/homepageTitleImage.webp" alt="Title Image"
-      class="z-10 w-screen max-h-[600px] object-cover opacity-40 min-h-[400px] bg-gray-400">
+      class="z-10 w-screen max-h-[600px] object-cover opacity-100 min-h-[400px] bg-gray-400">
+    <!--Picture from the inside of the store-->
     <div class="absolute inset-0 flex items-center justify-center text-5xl text-white font-bold p-[20px]">
       <img src="images/XinChaoLogoSVGWhite.svg" alt="XinChaoLogoSVG" class=" h-[18vw] z-20 mt-[6vh]" />
+      <!--The xin chao logo-->
     </div>
+    <div class="absolute inset-0 w-full h-full bg-black opacity-60"></div>
+    <!--A div that dims the color of the main picture-->
   </section>
 
   <div class="loadAnimation">
-    <a href="/src/meny.html">
+    <!--A class that has a loading animation when you reload the page. The content "fades in" from the bottom-->
+    <a href="/src/meny.html"> <!--Se meny button under the main picture-->
       <div class="flex flex-row justify-center gap-[4vw] mt-[30px]">
         <div
-          class="w-[175px] h-[45px] md:w-[200px] md:h-[60px] bg-[#262626] mt-[1.5vh] rounded-[50px] flex items-center justify-center hover:scale-110 duration-200">
-          <p class="flex items-center gap-1 text-2xl text-[#FBFFF4] hover:text-gray-400 font-sans"><ion-icon
-              name="grid-outline" class="mr-2"></ion-icon>Se meny</p>
+          class="w-[40vw] h-[40px] sm:w-[175px] sm:h-[45px] md:w-[200px] md:h-[60px] bg-[#262626] mt-[1.5vh] rounded-[50px] flex items-center justify-center hover:scale-110 duration-200">
+          <p class="flex items-center gap-1 text-[5vw] sm:text-2xl text-[#FBFFF4] hover:text-gray-400 font-sans">
+            <ion-icon name="grid-outline" class="mr-2"></ion-icon>Se meny</p>
         </div>
     </a>
-    <a href="/src/contact.html">
+    <a href="/src/contact.html"> <!--Finn os button under the main picture-->
       <div
-        class="w-[175px] h-[45px] md:w-[200px] md:h-[60px] bg-[#262626] mt-[1.5vh] rounded-[50px] flex items-center justify-center hover:scale-110 duration-200">
-        <p class="flex items-center gap-1 text-2xl text-[#FBFFF4] hover:text-gray-400 font-sans"><ion-icon
+        class="w-[40vw] h-[40px] sm:w-[175px] sm:h-[45px] md:w-[200px] md:h-[60px] bg-[#262626] mt-[1.5vh] rounded-[50px] flex items-center justify-center hover:scale-110 duration-200">
+        <p class="flex items-center gap-1 text-[5vw] sm:text-2xl text-[#FBFFF4] hover:text-gray-400 font-sans"><ion-icon
             name="navigate-outline" class="mr-2"></ion-icon>Finn oss</p>
       </div>
     </a>
   </div>
-  <div class="flex items-center flex-col justify-self-center">
-    <div class="w-full h-full flex justify-center mt-[2vh]">
-      <h1
-        class="pt-4 pb-1 flex items-center justify-center text-white bg-clip-text text-3xl font-extrabold text-center self-center ">
-        Spesialer</h1>
-    </div>
-    <div class="flex sm:flex-row flex-col m-auto gap-[3vw] sm:gap-0 md:gap-[3vw] justify-self-center">
-      <a href="/src/meny.html">
-        <div
-          class="w-[90vw] h-full sm:h-[250px] md:h-full p-[3vh] sm:w-[45vw] md:w-[30vw] mr-0 sm:mr-[3vw] md:mr-0 bg-[#262626] rounded-[50px] flex justify-center flex-col hover:scale-105 duration-200">
-          <img src="images/Bun_Bo_Xao_Cha_Gio.png" alt="Fried sprint roll chicken" class="w-full">
-          <h2 class="text-center text-[#FBFFF4] font-awesome text-xl hover:text-gray-400">Bun bo xao cha gio</h1>
-        </div>
-      </a>
-      <a href="/src/meny.html">
-        <div
-          class="w-[90vw] h-full sm:h-[250px] md:h-full p-[3vh] sm:w-[45vw] md:w-[30vw] bg-[#262626] rounded-[50px] flex justify-center flex-col hover:scale-105 duration-200">
-          <img src="images/Bun_bo_hue.png" alt="Fried sprint roll chicken" class="w-full">
-          <h1 class="text-center text-[#FBFFF4] font-awesome text-xl hover:text-gray-400">Bun bo hue</h1>
-        </div>
-      </a>
-      <a href="/src/meny.html">
-        <div
-          class="w-[90vw] h-full sm:h-[250px] md:h-full p-[3vh] sm:w-[30vw] sm:hidden md:block bg-[#262626] rounded-[50px] flex justify-center flex-col hover:scale-105 duration-200">
-          <img src="images/Fried_spring_roll_chicken.png" alt="Fried sprint roll chicken" class="w-full">
-          <h1 class="text-center text-[#FBFFF4] font-awesome text-xl hover:text-gray-400">Fried spring roll</h1>
-        </div>
-      </a>
-    </div>
-    <a href="/src/meny.html">
-      <div
-        class="w-[200px] h-[60px] bg-[#262626] mt-[2vh] rounded-[50px] flex items-center justify-center hover:scale-105 duration-200">
-        <p class="flex items-center gap-1 text-2xl text-[#FBFFF4] hover:text-gray-400 font-sans">Se mer</p>
+  <div class="loadAnimation">
+    <div class="flex items-center flex-col justify-self-center">
+      <div class="w-full h-full mt-[2vh]">
+        <h1
+          class="ml-[1vw] pt-4 pb-3 text-white bg-clip-text text-4xl font-extrabold flex items-center justify-center sm:justify-start">
+          <ion-icon name="flame-outline" class="mr-2"></ion-icon>Populert
+        </h1>
       </div>
-    </a>
-    <div>
-      <p class="font-bold mb-5 text-[#FBFFF4] text-center mt-[8vh]">Åpningstider</p>
-      <div class="bg-[#262626] p-5 w-100 rounded-2xl w-[90vw] md:w-[50vw] text-[#FBFFF4]">
+      <div class="flex sm:flex-row flex-col m-auto gap-[3vw] sm:gap-0 md:gap-[3vw] justify-self-center">
+        <a href="/src/meny.html">
+          <div
+            class="w-[90vw] h-full sm:h-[250px] md:h-full p-[3vh] sm:w-[45vw] md:w-[30vw] mr-0 sm:mr-[3vw] md:mr-0 bg-[#262626] rounded-[50px] flex justify-center flex-col hover:scale-105 duration-200">
+            <img src="images/Bun_Bo_Xao_Cha_Gio.png" alt="Fried sprint roll chicken" class="w-full">
+            <h2 class="text-center text-[#FBFFF4] font-awesome text-xl hover:text-gray-400">Bun bo xao cha gio</h1>
+          </div>
+        </a>
+        <a href="/src/meny.html">
+          <div
+            class="w-[90vw] h-full sm:h-[250px] md:h-full p-[3vh] sm:w-[45vw] md:w-[30vw] bg-[#262626] rounded-[50px] flex justify-center flex-col hover:scale-105 duration-200">
+            <img src="images/Bun_bo_hue.png" alt="Fried sprint roll chicken" class="w-full">
+            <h1 class="text-center text-[#FBFFF4] font-awesome text-xl hover:text-gray-400">Bun bo hue</h1>
+          </div>
+        </a>
+        <a href="/src/meny.html">
+          <div
+            class="w-[90vw] h-full sm:h-[250px] md:h-full p-[3vh] sm:w-[30vw] sm:hidden md:block bg-[#262626] rounded-[50px] flex justify-center flex-col hover:scale-105 duration-200">
+            <img src="images/Fried_spring_roll_chicken.png" alt="Fried sprint roll chicken" class="w-full">
+            <h1 class="text-center text-[#FBFFF4] font-awesome text-xl hover:text-gray-400">Fried spring roll</h1>
+          </div>
+        </a>
+      </div>
+      <a href="/src/meny.html">
+        <div
+          class="w-[200px] h-[60px] bg-[#262626] mt-[2vh] rounded-[50px] flex items-center justify-center hover:scale-105 duration-200">
+          <p class="flex items-center gap-1 text-2xl text-[#FBFFF4] hover:text-gray-400 font-sans">Se mer</p>
+        </div>
+      </a>
+      <div>
+        <h2 class="font-bold mb-5 text-[#FBFFF4] text-center mt-[8vh] text-3xl">Åpningstider</h2>
+        <div class="bg-[#262626] p-5 w-100 rounded-2xl w-[90vw] md:w-[70vw] max-w-[1000px] text-[#FBFFF4]">
           <div class="flex justify-between border-b-1 p-2 pt-0 border-black">
-              <p>Mandag</p>
-              <p>Stengt</p>
+            <p>Mandag</p>
+            <p>Stengt</p>
           </div>
           <div class="flex justify-between border-b-1 p-2 border-black">
-              <p>Tirsdag</p>
-              <p>14:00-21:00</p>
+            <p>Tirsdag</p>
+            <p>14:00-21:00</p>
           </div>
           <div class="flex justify-between border-b-1 p-2 border-black">
-              <p>Onsdag</p>
-              <p>14:00-21:00</p>
+            <p>Onsdag</p>
+            <p>14:00-21:00</p>
           </div>
           <div class="flex justify-between border-b-1 p-2 border-black">
-              <p>Torsdag</p>
-              <p>14:00-21:00</p>
+            <p>Torsdag</p>
+            <p>14:00-21:00</p>
           </div>
           <div class="flex justify-between border-b-1 p-2 border-black">
-              <p>Fredag</p>
-              <p>14:00-21:00</p>
+            <p>Fredag</p>
+            <p>14:00-21:00</p>
           </div>
           <div class="flex justify-between border-b-1 p-2 border-black">
-              <p>Lørdag</p>
-              <p>14:00-21:00</p>
+            <p>Lørdag</p>
+            <p>14:00-21:00</p>
           </div>
           <div class="flex justify-between p-2 pb-0">
-              <p>Søndag</p>
-              <p>14:00-21:00</p>
+            <p>Søndag</p>
+            <p>14:00-21:00</p>
           </div>
+        </div>
       </div>
-  </div>
+
+    </div>
+
+
+    <div class="h-[20vh]"></div>
+
+    <div class="text-gray-400 text-center mb-5">
+      <p>Produced by:</p>
+      <div class="gap-[50px]">
+        <a href="https://github.com/botsqerebot" class="mr-4 hover:text-[#FBFFF4]"><ion-icon name="logo-github"></ion-icon> Sebastian H-G</a>
+        <a href="https://github.com/WilliamNord" class="mr-4 hover:text-[#FBFFF4]"><ion-icon name="logo-github"></ion-icon> William N</a>
+        <a href="https://github.com/vipha003" class="hover:text-[#FBFFF4]"><ion-icon name="logo-github"></ion-icon> Vinh Anh</a>
+      </div>
+    </div>
 
   </div>
-
-  
-  <div class="h-[40vh]"></div>
   <!-- <img src="/src/images/SunShine.jpeg" alt=""> -->
 
 
